@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: AudioCtrl', function () {
 
   // load the controller's module
   beforeEach(module('whosyourdaddythebandApp'));
 
-  var MainCtrl,
+  var AudioCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    AudioCtrl = $controller('AudioCtrl', {
       $scope: scope
     });
   }));

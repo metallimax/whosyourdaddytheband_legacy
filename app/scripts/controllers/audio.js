@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('controllers')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+  .controller('AudioCtrl', ['$scope', function ($scope) {
     $scope.dummy = 'dummy';
   }]);
