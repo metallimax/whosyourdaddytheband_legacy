@@ -86,3 +86,7 @@ body {
     border-bottom: 0;
   }
 }
+
+.header .headerlogo {
+  /*float: left;*/
+}

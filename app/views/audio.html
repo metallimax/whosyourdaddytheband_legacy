@@ -1,1 +1,6 @@
-<p>This is the audio view.</p>
+<div ng-repeat="track in tracks | unique:'album'">
+  <h2>{{ track.album }}</h2>
+  <ul>
+    <li ng-repeat="tr in tracks | filter:{album: track.album}:true">{{tr.number | prependZero}} - {{tr.title}}</li>
+  </ul>
+</div>

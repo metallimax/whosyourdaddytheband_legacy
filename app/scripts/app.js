@@ -1,11 +1,14 @@
 'use strict';
 
 angular.module('controllers', []);
+angular.module('filters', []);
 
 angular.module('whosyourdaddythebandApp', [
   'ngCookies',
   'ngRoute',
-  'controllers'
+  'ui.filters',
+  'controllers',
+  'filters'
 ])
   .config(function ($routeProvider) {
     $routeProvider
