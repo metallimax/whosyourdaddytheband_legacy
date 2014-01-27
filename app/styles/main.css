@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: black;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -88,30 +89,42 @@ body {
 }
 
 .nav {
-  margin-bottom: 16px;
+  margin-bottom: -22px;
+  margin-left: 10px;
 }
 
 .header {
   text-align: center;
   border-radius: 8px;
-  background-color: #333333;
-  border: solid 3px #502102;
+  background-color: #111111;
+  border: none 1px #502102;
   margin: 10px;
+  box-shadow: 0px 0px 8px #666666;
 }
 
-.toto {
+.view {
   border-radius: 8px;
-  background-color: #333333;
-  border: solid 3px #502102;
-  margin: 10px;
+  background-color: white;
+  border: none 1px #502102;
+  margin: 0px;
+  padding: 20px;
+  box-shadow: 0px 0px 8px #ffffff;
 }
 
 .footer {
+  font-family: wydBiohazard;
+  font-size: 200%;
+  letter-spacing: 4px;
+  
   text-align: center;
   border-radius: 8px;
-  background-color: #333333;
-  border: solid 3px #502102;
-  margin: 10px;
+  /*border-color: #502102;*/
+  border-color: white;
+  border-style: solid none none none;
+  border-width: 3px;
+  margin-top: 20px;
+  padding-top: 0px;
+  color: white;
 }
 
 @font-face {
@@ -119,12 +132,17 @@ body {
   src: url(../fonts/LL_RECOR.TTF);
 }
 
+@font-face {
+  font-family: wydBiohazard;
+  src: url(../fonts/biohazard.ttf);
+}
+
 /*.wyd-player {*/
 .wyd-player a.wyd-player-command {
   font-family: wydPlayerFont;
   font-size: 32pt;
   color: #502102;
-  text-shadow: 2px 2px 4px #666666;
+  /*text-shadow: 0px 0px 4px #666666;*/
 /*}
 
 .wyd-player a.wyd-player-command {*/
@@ -165,6 +183,10 @@ body {
 }
 
 .wyd-player {
+  background: url(../images/wyd-logo-2.0.png) 4px 4px;
+  background-size: 14%;
+  background-repeat:no-repeat;
+  back
   /*float: left;*/
 }
 
@@ -192,6 +214,13 @@ body {
   margin-bottom: 4px;
 }
 
+.nav-pills > li {
+  font-family: wydBiohazard;
+  font-size: 400%;
+  letter-spacing: 4px;
+  line-height: 50%;
+}
+
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -202,8 +231,7 @@ body {
 .nav-pills > li > a,
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
-  color: #502102;
-  /*background-color: #9b3d00;*/
+  color: #999999;
 }
 
 .nav-pills > li > a:hover {

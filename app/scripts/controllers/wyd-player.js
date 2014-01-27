@@ -28,33 +28,54 @@ angular.module('controllers')
     $scope.elapsed = 0;
     $scope.buffered = 0;
     $scope.time = '00:00';
+    $scope.playing = false;
     
     $interval(function() {
       var ct = $scope.wydPlayerAudio.currentTime;
       var d = $scope.wydPlayerAudio.duration;
       var bt = $scope.wydPlayerAudio.buffered.length > 0 && $scope.wydPlayerAudio.buffered.end(0) || 0;
       
+      if(!d && !bt) {
+        return;
+      }
+      
       // var h = Math.round(ct/3600);
       var m = Math.round((ct%3600)/60);
       var s = Math.round(ct%60);
       $scope.time = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
-      // $scope.elapsed = Math.round(100*ct/d);
       $scope.buffered = Math.round(100*bt/d);
-      $scope.elapsed = Math.round(10000*ct/(d*$scope.buffered));
+      if($scope.buffered !== 0) {
+        $scope.elapsed = Math.round(10000*ct/(d*$scope.buffered));
+      }
+      
+      if($scope.playing && ct === d) {
+        $scope.wydPlayer.next();
+      }
     }, 1000);
     
     $scope.wydPlayer = {
       previous: function() {
-        $log.info('wydPlayer.previous()');
+        if($scope.playlist.current === 0) {
+          $scope.playlist.current = $scope.playlist.tracks.length;
+        }
+        $scope.changeTrack($scope.playlist.current - 1);
+        if($scope.playing) {
+          $scope.wydPlayer.play();
+        }
       },
       play: function() {
         $scope.wydPlayerAudio.play();
+        $scope.playing = !$scope.wydPlayerAudio.paused;
       },
       pause: function() {
         $scope.wydPlayerAudio.pause();
+        $scope.playing = !$scope.wydPlayerAudio.paused;
       },
       next: function() {
-        $log.info('wydPlayer.next()');
+        $scope.changeTrack(($scope.playlist.current + 1) % $scope.playlist.tracks.length);
+        if($scope.playing) {
+          $scope.wydPlayer.play();
+        }
       },
       volume: function() {
         $log.info('wydPlayer.volume()');
@@ -63,4 +84,6 @@ angular.module('controllers')
         $log.info('wydPlayer.list()');
       }
     };
+    
+    // $scope.wydPlayer.play();
   }]);
