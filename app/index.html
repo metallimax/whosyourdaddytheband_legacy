@@ -25,16 +25,21 @@
     <![endif]-->
     <!--wyd-logo-2.0.png-->
     <div class="header">
-      <ul class="nav nav-pills pull-right">
-        <li ng-class="{active: route == '/'}"><a ng-href="#">Home</a></li>
-        <li ng-class="{active: route == '/audio'}"><a ng-href="#audio">Audio</a></li>
-        <li ng-class="{active: route == '/video'}"><a ng-href="#video">Video</a></li>
-        <li ng-class="{active: route == '/the-band'}"><a ng-href="#the-band">The Band</a></li>
-        <li ng-class="{active: route == '/about'}"><a ng-href="#about">About</a></li>
-        <li ng-class="{active: route == '/contact'}"><a ng-href="#contact">Contact</a></li>
-      </ul>
-      <img class="headerlogo" src="images/wyd-logo-2.0.png" alt="WYD?" />
-      <wyd-player />
+      <div>
+        <img class="headerlogo" src="images/wyd-logo-2.0.png" alt="WYD?" />
+        <wyd-player />
+      </div>
+      <div>
+        <!-- <ul class="nav nav-pills pull-right"> -->
+        <ul class="nav nav-pills">
+          <li ng-class="{active: route == '/'}"><a ng-href="#">Home</a></li>
+          <li ng-class="{active: route == '/audio'}"><a ng-href="#audio">Audio</a></li>
+          <li ng-class="{active: route == '/video'}"><a ng-href="#video">Video</a></li>
+          <li ng-class="{active: route == '/the-band'}"><a ng-href="#the-band">The Band</a></li>
+          <li ng-class="{active: route == '/about'}"><a ng-href="#about">About</a></li>
+          <li ng-class="{active: route == '/contact'}"><a ng-href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- Add your site or application content here -->

@@ -87,6 +87,33 @@ body {
   }
 }
 
+.nav {
+  margin-bottom: 16px;
+}
+
+.header {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #333333;
+  border: solid 3px #502102;
+  margin: 10px;
+}
+
+.toto {
+  border-radius: 8px;
+  background-color: #333333;
+  border: solid 3px #502102;
+  margin: 10px;
+}
+
+.footer {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #333333;
+  border: solid 3px #502102;
+  margin: 10px;
+}
+
 @font-face {
   font-family: wydPlayerFont;
   src: url(../fonts/LL_RECOR.TTF);
@@ -116,11 +143,15 @@ body {
   display: none;
 }
 
-.wyd-player .progress {
+.wyd-player-progress {
   width: 200px;
   height: 4px;
   background: transparent;
   border: solid 1px #502102;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  margin-bottom: 8px;
 }
 
 .wyd-player .progress-buffered {
@@ -133,11 +164,53 @@ body {
   background: #502102;
 }
 
-.header .headerlogo {
+.wyd-player {
   /*float: left;*/
+}
+
+.wyd-player-time {
+  color: #9b3d00;
+  font-weight: bold;
+}
+
+.wyd-player-title {
+  color: #502102;
+  font-weight: bold;
+}
+
+.headerlogo {
+  float: left;
   width: 10%;
 }
 
 .main-logo {
   width: 60%;
+}
+
+.news .news-item h2 {
+  font-size: 130%;
+  margin-bottom: 4px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #502102;
+  color: white;
+}
+
+.nav-pills > li > a,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+  color: #502102;
+  /*background-color: #9b3d00;*/
+}
+
+.nav-pills > li > a:hover {
+  background-color: #9b3d00;
+  color: white;
+}
+
+.news .news-item .news-item-date {
+  font-size: 80%;
 }

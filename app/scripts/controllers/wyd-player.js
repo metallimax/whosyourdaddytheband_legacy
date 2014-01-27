@@ -27,19 +27,20 @@ angular.module('controllers')
     
     $scope.elapsed = 0;
     $scope.buffered = 0;
-    $scope.time = '';
+    $scope.time = '00:00';
     
     $interval(function() {
       var ct = $scope.wydPlayerAudio.currentTime;
       var d = $scope.wydPlayerAudio.duration;
-      var bt = $scope.wydPlayerAudio.buffered.end(0);
+      var bt = $scope.wydPlayerAudio.buffered.length > 0 && $scope.wydPlayerAudio.buffered.end(0) || 0;
       
       // var h = Math.round(ct/3600);
       var m = Math.round((ct%3600)/60);
       var s = Math.round(ct%60);
       $scope.time = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
-      $scope.elapsed = Math.round(100*ct/d);
+      // $scope.elapsed = Math.round(100*ct/d);
       $scope.buffered = Math.round(100*bt/d);
+      $scope.elapsed = Math.round(10000*ct/(d*$scope.buffered));
     }, 1000);
     
     $scope.wydPlayer = {

@@ -22,6 +22,26 @@ angular.module('controllers')
         title: 'Build My Hate',
         album: 'Who\'s Your Daddy?',
         number: 3
+      },
+      {
+        title: 'Ravage',
+        album: 'Who\'s Your Daddy?',
+        number: 4
+      },
+      {
+        title: 'K.Y.M.S.',
+        album: 'Who\'s Your Daddy?',
+        number: 5
+      },
+      {
+        title: 'Smash Your Ass Out',
+        album: 'Bonus',
+        number: 1
+      },
+      {
+        title: 'Motor HC',
+        album: 'Bonus',
+        number: 2
       }
     ];
   }]);

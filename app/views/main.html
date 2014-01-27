@@ -1,11 +1,9 @@
-<div class="jumbotron">
-  <!--<h1>Whö's Your Daddy?</h1>-->
-  <p class="lead">
-    <img class="main-logo" src="images/wyd-logo-2.0.png" alt="WYD?"><br>
-    Metal Band.
-  </p>
-  <!--<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>-->
-</div>
-
-<div class="row marketing">
+<!-- <img class="main-logo" src="images/wyd-logo-2.0.png" alt="WYD?"><br>
+Metal Band. -->
+<div class="news">
+  <div class="news-item" ng-repeat="newsItem in news">
+    <h2>{{newsItem.title}}</h2>
+    <div class="news-item-date">{{newsItem.date | date}}</div>
+    <div class="news-item-content">{{newsItem.content}}</div>
+  </div>
 </div>

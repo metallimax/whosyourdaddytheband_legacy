@@ -5,6 +5,7 @@ angular.module('directives')
     return {
       template: [
         '<div class="wyd-player" ng-controller="WydPlayerCtrl">',
+        '<div>',
         '<a class="wyd-player-command" ng-click="wydPlayer.previous()">z</a>',
         '<a class="wyd-player-command" ng-show="wydPlayerAudio.paused" ng-click="wydPlayer.play()">u</a>',
         '<a class="wyd-player-command" ng-show="!wydPlayerAudio.paused" ng-click="wydPlayer.pause()">x</a>',
@@ -15,8 +16,9 @@ angular.module('directives')
         '<audio id="wyd-audioplayer" controls="controls">',
         'Your browser does not support the audio element.',
         '</audio>',
-        '<span class="wyd-player-title">{{ playlist.currentTitle }}</span>',
-        '<div class="progress"><div class="progress-buffered" style="width: {{buffered}}%;"><div class="progress-elapsed" style="width: {{elapsed}}%;"></div></div></div>',
+        '</div>',
+        '<div class="wyd-player-title"><span class="wyd-player-time">[{{ time }}]</span> <span class="wyd-player-title">{{ playlist.currentTitle }}</span></div>',
+        '<div class="wyd-player-progress"><div class="progress-buffered" style="width: {{buffered}}%;"><div class="progress-elapsed" style="width: {{elapsed}}%;"></div></div></div>',
         '</div>'
       ].join(''),
       restrict: 'E'
