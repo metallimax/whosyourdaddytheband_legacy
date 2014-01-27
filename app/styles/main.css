@@ -116,6 +116,23 @@ body {
   display: none;
 }
 
+.wyd-player .progress {
+  width: 200px;
+  height: 4px;
+  background: transparent;
+  border: solid 1px #502102;
+}
+
+.wyd-player .progress-buffered {
+  height: inherit;
+  background: #9b3d00;
+}
+
+.wyd-player .progress-elapsed {
+  height: inherit;
+  background: #502102;
+}
+
 .header .headerlogo {
   /*float: left;*/
   width: 10%;

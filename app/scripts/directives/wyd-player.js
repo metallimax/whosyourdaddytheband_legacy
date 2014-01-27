@@ -16,6 +16,7 @@ angular.module('directives')
         'Your browser does not support the audio element.',
         '</audio>',
         '<span class="wyd-player-title">{{ playlist.currentTitle }}</span>',
+        '<div class="progress"><div class="progress-buffered" style="width: {{buffered}}%;"><div class="progress-elapsed" style="width: {{elapsed}}%;"></div></div></div>',
         '</div>'
       ].join(''),
       restrict: 'E'

@@ -25,22 +25,21 @@ angular.module('controllers')
     
     $scope.changeTrack(0);
     
+    $scope.elapsed = 0;
+    $scope.buffered = 0;
+    $scope.time = '';
+    
     $interval(function() {
-      var ct = audioplayer.getCurrentTime();
-      var d = audioplayer.getDuration();
-      var bt = audioplayer.getBuffered();
+      var ct = $scope.wydPlayerAudio.currentTime;
+      var d = $scope.wydPlayerAudio.duration;
+      var bt = $scope.wydPlayerAudio.buffered.end(0);
       
-      var h = Math.round(ct/3600);
+      // var h = Math.round(ct/3600);
       var m = Math.round((ct%3600)/60);
       var s = Math.round(ct%60);
-      // var added = audioplayer.paused() ? ' [pause]' : '';
-      // element.innerHTML = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s + added;
-      // TODO 170 is a fixed value
-      var ct_width = Math.round(170*ct/d);
-      element.style.width = width + 'px';
-      // TODO 170 is a fixed value
-      var bt_width = Math.round(170*bt/d);
-      // element.style.width = width + 'px';
+      $scope.time = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      $scope.elapsed = Math.round(100*ct/d);
+      $scope.buffered = Math.round(100*bt/d);
     }, 1000);
     
     $scope.wydPlayer = {
