@@ -90,3 +90,7 @@ body {
 .header .headerlogo {
   /*float: left;*/
 }
+
+.main-logo {
+  width: 100%;
+}

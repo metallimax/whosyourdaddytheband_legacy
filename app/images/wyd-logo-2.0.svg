@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="705.97498"
+   height="611.40002"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="wyd-logo-2.0.svg">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3081"
+       inkscape:menu-tooltip="Roughen all inside shapes"
+       inkscape:menu="Distort"
+       inkscape:label="Roughen inside"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3083"
+         result="result1"
+         stdDeviation="3" />
+      <feBlend
+         id="feBlend3085"
+         in2="result1"
+         result="result5"
+         mode="multiply"
+         in="result1" />
+      <feGaussianBlur
+         id="feGaussianBlur3087"
+         in="result5"
+         result="result6"
+         stdDeviation="1" />
+      <feComposite
+         id="feComposite3089"
+         in2="result5"
+         result="result8"
+         in="result6"
+         operator="xor" />
+      <feComposite
+         id="feComposite3091"
+         in2="result8"
+         in="result6"
+         result="fbSourceGraphic"
+         operator="xor" />
+      <feSpecularLighting
+         id="feSpecularLighting3093"
+         in="fbSourceGraphic"
+         result="result1"
+         lighting-color="#ffffff"
+         surfaceScale="2"
+         specularConstant="2.20000005"
+         specularExponent="55">
+        <fePointLight
+           id="fePointLight3095"
+           x="-5000"
+           y="-10000"
+           z="20000" />
+      </feSpecularLighting>
+      <feComposite
+         id="feComposite3097"
+         in2="fbSourceGraphic"
+         in="result1"
+         result="result2"
+         operator="in" />
+      <feComposite
+         id="feComposite3099"
+         in2="result2"
+         in="fbSourceGraphic"
+         result="result4"
+         operator="arithmetic"
+         k2="2"
+         k3="1"
+         k1="0"
+         k4="0" />
+      <feComposite
+         id="feComposite3101"
+         in2="result4"
+         operator="in"
+         result="result91" />
+      <feBlend
+         id="feBlend3103"
+         in2="result91"
+         mode="darken"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3105" />
+      <feTurbulence
+         id="feTurbulence3107"
+         numOctaves="5"
+         seed="0"
+         type="fractalNoise"
+         baseFrequency="0.08" />
+      <feGaussianBlur
+         id="feGaussianBlur3109"
+         stdDeviation="0.5"
+         result="result91" />
+      <feDisplacementMap
+         id="feDisplacementMap3111"
+         in2="result91"
+         scale="20"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         in="fbSourceGraphic"
+         result="result1" />
+      <feComposite
+         id="feComposite3113"
+         in2="fbSourceGraphic"
+         in="result1"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter3173"
+       inkscape:label="Noise transparency"
+       inkscape:menu="ABCs"
+       inkscape:menu-tooltip="Basic noise transparency texture"
+       height="1.4"
+       y="-0.2"
+       width="1.4"
+       x="-0.2"
+       color-interpolation-filters="sRGB">
+      <feTurbulence
+         id="feTurbulence3175"
+         baseFrequency="0.05"
+         numOctaves="5"
+         type="fractalNoise"
+         result="result91" />
+      <feDisplacementMap
+         id="feDisplacementMap3177"
+         in2="result91"
+         scale="25"
+         result="result5"
+         xChannelSelector="R"
+         in="SourceGraphic"
+         yChannelSelector="A" />
+      <feComposite
+         id="feComposite3179"
+         in2="result5"
+         in="SourceGraphic"
+         operator="atop"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3181" />
+      <feTurbulence
+         id="feTurbulence3183"
+         type="fractalNoise"
+         numOctaves="5"
+         baseFrequency="0.02"
+         result="result1" />
+      <feComposite
+         id="feComposite3185"
+         in2="result1"
+         operator="in"
+         result="result2"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3187"
+         result="result3"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 3 -1 "
+         in="result2" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3829"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.978125"
+         id="feGaussianBlur3831" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.18881079"
+     inkscape:cx="-784.69299"
+     inkscape:cy="131.8586"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.575,-185.175)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3852"
+       width="855.35364"
+       height="658.06622"
+       x="-2098.6619"
+       y="-757.65088"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57" />
+    <path
+       inkscape:export-ydpi="43.57"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:connector-curvature="0"
+       d="m 177.79691,444.90625 -103.375,179.03127 35.125,60.84379 35.125,60.8437 206.25,0 0,-181.5625 -32.2813,0 16.375,-28.375 -157.2187,-90.78126 z m 379.59377,-3.46875 -157.24997,90.78125 18.375,31.84375 -39.9063,0 0,181.5625 213.87497,0 35.12496,-60.8437 35.125,-60.84379 L 557.39068,441.43749 z M 298.32811,236.125 l -106.0312,183.65625 157.2188,90.78125 19.0625,-33 18.875,32.6875 157.24997,-90.78125 -105.875,-183.34375 -70.24997,0 -70.2501,0 z m -82.7187,210.90625 c -34.0729,58.96875 -68.1458,117.9375 -102.2187,176.90627 16.8958,29.22919 33.7916,58.45829 50.6874,87.68749 136.3438,0 272.68757,0 409.03127,0 16.8958,-29.2292 33.79167,-58.4583 50.68747,-87.68749 C 555.65468,505.98589 487.48798,388.0484 419.29691,270.125 c -33.8021,0 -67.6042,0 -101.4063,0 -34.0937,58.96876 -68.1875,117.93752 -102.2812,176.90625 z M 370.29691,412.375 c 35.5724,61.9266 71.08767,123.97541 107.18747,185.6875 -72.62497,0 -145.24997,0 -217.87497,0 36.8477,-62.64856 72.7101,-125.73019 108.9688,-188.6875 0.5729,1 1.1458,2 1.7187,3 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter3829)"
+       id="path3047" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 215.59375,447.03125 C 181.52083,506 147.44792,564.96875 113.375,623.9375 c 16.89583,29.22917 33.79167,58.45833 50.6875,87.6875 136.34375,0 272.6875,0 409.03125,0 16.89583,-29.22917 33.79167,-58.45833 50.6875,-87.6875 -68.14224,-117.95162 -136.30892,-235.88911 -204.5,-353.8125 -33.80208,0 -67.60417,0 -101.40625,0 -34.09375,58.96875 -68.1875,117.9375 -102.28125,176.90625 z M 370.28125,412.375 c 35.5724,61.92659 71.08772,123.9754 107.1875,185.6875 -72.625,0 -145.25,0 -217.875,0 36.84773,-62.64857 72.71012,-125.73019 108.96875,-188.6875 0.57292,1 1.14583,2 1.71875,3 z"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57" />
+    <g
+       id="g3076"
+       style="filter:url(#filter3081)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57">
+      <path
+         id="path3013"
+         d="M 298.3125,236.125 192.28125,419.78125 349.5,510.5625 l 19.0625,-33 18.875,32.6875 157.25,-90.78125 -105.875,-183.34375 -70.25,0 -70.25,0 z"
+         style="fill:#28170b;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3009"
+         d="m 557.375,441.4375 -157.25,90.78125 18.375,31.84375 -39.90625,0 0,181.5625 213.875,0 35.125,-60.84375 35.125,-60.84375 -105.34375,-182.5 z"
+         style="fill:#28170b;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3011"
+         d="m 177.78125,444.90625 -103.375,179.03125 35.125,60.84375 35.125,60.84375 206.25,0 0,-181.5625 -32.28125,0 L 335,535.6875 177.78125,444.90625 z"
+         style="fill:#28170b;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       sodipodi:type="star"
+       style="fill:#ff6600;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3024"
+       sodipodi:sides="3"
+       sodipodi:cx="305.71429"
+       sodipodi:cy="272.36218"
+       sodipodi:r1="420.78644"
+       sodipodi:r2="210.39322"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 670.12604,482.7554 -364.41174,0 -364.411751,0 L 123.50842,167.16558 305.7143,-148.42426 487.92016,167.16557 z"
+       inkscape:transform-center-y="-105.19661"
+       transform="translate(61.757987,-536.216)" />
+    <path
+       id="path3026"
+       d="m 297.21329,-562.94814 -111.9375,193.90625 -111.968703,193.90625 35.125003,60.84375 35.125,60.843754 223.9062,0 223.90629,0 35.125,-60.843754 35.125,-60.84375 -111.9375,-193.90625 -111.96879,-193.90625 -70.25,0 -70.25,0 z m 70.25,241.4375 24.9688,43.25 24.9687,43.25 -49.9375,0 -49.9375,0 24.9688,-43.25 24.9687,-43.25 z"
+       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3028"
+       d="m 297.21329,-562.94814 -106.0312,183.65625 157.2187,90.78125 19.0625,-33 18.875,32.6875 157.25004,-90.78125 -105.87504,-183.34375 -70.25,0 -70.25,0 z"
+       style="fill:#ff2a2a;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3030"
+       d="m 556.27583,-357.63564 -157.25004,90.78125 18.375,31.84375 -39.9062,0 0,181.562504 213.87499,0 35.125,-60.843754 35.125,-60.84375 -105.34375,-182.5 z"
+       style="fill:#00ffff;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3032"
+       d="m 176.68209,-354.16689 -103.375003,179.03125 35.125003,60.84375 35.125,60.843754 206.25,0 0,-181.562504 -32.2813,0 16.375,-28.375 -157.2187,-90.78125 z"
+       style="fill:#ff00ff;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3056"
+       transform="translate(71.15606,18.725275)">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -529.03078,745.65568 c -34.07292,58.96875 -68.14583,117.9375 -102.21875,176.90625 16.89583,29.22917 33.79167,58.45833 50.6875,87.68747 136.34375,0 272.6875,0 409.03125,0 16.89583,-29.22914 33.79167,-58.4583 50.6875,-87.68747 -68.14224,-117.95162 -136.30892,-235.88911 -204.5,-353.8125 -33.80208,0 -67.60417,0 -101.40625,0 -34.09375,58.96875 -68.1875,117.9375 -102.28125,176.90625 z m 154.6875,-34.65625 c 35.5724,61.92659 71.08772,123.9754 107.1875,185.6875 -72.625,0 -145.25,0 -217.875,0 36.84773,-62.64857 72.71012,-125.73019 108.96875,-188.6875 0.57292,1 1.14583,2 1.71875,3 z"
+         id="path3068"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#28170b;fill-opacity:1;stroke:none"
+         d="m -446.31203,534.74943 -106.03125,183.65625 157.21875,90.78125 19.0625,-33 18.875,32.6875 157.25,-90.78125 -105.875,-183.34375 -70.25,0 -70.25,0 z"
+         id="path3070" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#28170b;fill-opacity:1;stroke:none"
+         d="m -187.24953,740.06193 -157.25,90.78125 18.375,31.84375 -39.90625,0 0,181.56247 213.875,0 35.125,-60.84372 35.125,-60.84375 -105.34375,-182.5 z"
+         id="path3072" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#28170b;fill-opacity:1;stroke:none"
+         d="m -566.84328,743.53068 -103.375,179.03125 35.125,60.84375 35.125,60.84372 206.25,0 0,-181.56247 -32.28125,0 16.375,-28.375 -157.21875,-90.78125 z"
+         id="path3074" />
+    </g>
+    <g
+       id="g3168"
+       transform="translate(406.5,229.0625)"
+       style="fill:#552200;filter:url(#filter3173)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3126"
+         d="m -197.90625,186.40625 c 45.53125,26.26042 91.0625,52.52083 136.59375,78.78125 7.790475,-13.56318 15.590925,-27.12064 23.375,-40.6875 7.72253,13.46214 15.459368,26.91607 23.1875,40.375 C 30.791667,238.61458 76.333333,212.35417 121.875,186.09375 89.708333,130.41667 57.541667,74.739583 25.375,19.0625 c -42.208333,0 -84.416667,0 -126.625,0 -32.21875,55.78125 -64.4375,111.5625 -96.65625,167.34375 z"
+         style="fill:#552200;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3128"
+         d="m 9.9375,307.46875 c 7.599416,13.19187 15.194294,26.38646 22.875,39.53125 -16.239583,0 -32.47916667,0 -48.71875,0 0,52.52083 0,105.04167 0,157.5625 65,0 130,0 195,0 C 200.23958,468 221.38542,431.4375 242.53125,394.875 210.54167,339.47917 178.55208,284.08333 146.5625,228.6875 101.02083,254.94792 55.479167,281.20833 9.9375,307.46875 z"
+         style="fill:#552200;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3130"
+         d="m -318.40625,394.875 c 21.14583,36.5625 42.29167,73.125 63.4375,109.6875 62.45833,0 124.91667,0 187.375,0 0,-52.52083 0,-105.04167 0,-157.5625 -13.697917,0 -27.395833,0 -41.09375,0 7.01485,-11.98805 13.953636,-24.0203 20.875,-36.0625 -45.53125,-26.26042 -91.0625,-52.52083 -136.59375,-78.78125 -31.33333,54.23958 -62.66667,108.47917 -94,162.71875 z"
+         style="fill:#552200;fill-opacity:1;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:400px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Biohazard;-inkscape-font-specification:Biohazard"
+       x="307.625"
+       y="446.4281"
+       id="text3035"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57"><tspan
+         sodipodi:role="line"
+         id="tspan3037"
+         x="307.625"
+         y="446.4281">W</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3039"
+       y="-41.448513"
+       x="-684.534"
+       style="font-size:400px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Biohazard;-inkscape-font-specification:Biohazard"
+       xml:space="preserve"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57"><tspan
+         y="-41.448513"
+         x="-684.534"
+         id="tspan3041"
+         sodipodi:role="line">Y</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3043"
+       y="-669.89111"
+       x="247.95615"
+       style="font-size:400px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Biohazard;-inkscape-font-specification:Biohazard"
+       xml:space="preserve"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57"><tspan
+         y="-669.89111"
+         x="247.95615"
+         id="tspan3045"
+         sodipodi:role="line">D</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3053"
+       y="-765.08838"
+       x="152.10519"
+       style="font-size:116.34276581px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Biohazard;-inkscape-font-specification:Biohazard"
+       xml:space="preserve"
+       transform="matrix(-0.17449578,1.6064223,-0.61524199,-0.06682995,0,0)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57"><tspan
+         y="-765.08838"
+         x="152.10519"
+         id="tspan3055"
+         sodipodi:role="line">whos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:122.80608368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Biohazard;-inkscape-font-specification:Biohazard"
+       x="20.935429"
+       y="1072.4996"
+       id="text3057"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.6770123,-0.31118744,0.10696638,0.5764498,0,0)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57"><tspan
+         sodipodi:role="line"
+         id="tspan3059"
+         x="20.935429"
+         y="1072.4996">your</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3061"
+       y="588.43896"
+       x="369.53592"
+       style="font-size:132.03903198px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Biohazard;-inkscape-font-specification:Biohazard"
+       xml:space="preserve"
+       transform="matrix(1.563243,0.958838,-0.28510551,0.46482218,0,0)"
+       inkscape:export-filename="H:\wyd-logo-2.0.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57"><tspan
+         y="588.43896"
+         x="369.53592"
+         id="tspan3063"
+         sodipodi:role="line">daddy</tspan></text>
+    <path
+       id="path3053"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m -495.68722,217.35046 -103.375,179.03126 35.125,60.84375 35.125,60.84375 206.25,0 0,-181.56251 -32.2813,0 16.375,-28.375 -157.2187,-90.78125 z m 379.5938,-3.46875 -157.25,90.78125 18.375,31.84375 -39.9063,0 0,181.56251 213.875,0 35.125,-60.84375 35.125,-60.84375 -105.3437,-182.50001 z m -259.0626,-205.312505 -106.0312,183.656255 157.2188,90.78125 19.0625,-33 18.875,32.6875 157.25,-90.78125 -105.875,-183.343755 -70.25,0 -70.2501,0 z m -82.7187,210.906255 c -34.0729,58.96875 -68.1458,117.9375 -102.2187,176.90626 16.8958,29.22917 33.7916,58.45833 50.6874,87.6875 136.3438,0 272.6876,0 409.0313,0 16.8958,-29.22917 33.7917,-58.45833 50.6875,-87.6875 -68.1422,-117.95163 -136.3089,-235.88911 -204.5,-353.812515 -33.8021,0 -67.6042,0 -101.4063,0 -34.0937,58.968755 -68.1875,117.937515 -102.2812,176.906255 z m 154.6875,-34.65625 c 35.5724,61.92659 71.0877,123.9754 107.1875,185.6875 -72.625,0 -145.25,0 -217.875,0 36.8477,-62.64857 72.7101,-125.73019 108.9688,-188.6875 0.5729,1 1.1458,2 1.7187,3 z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="H:\wyd-logo-2.0-simple.png"
+       inkscape:export-xdpi="43.57"
+       inkscape:export-ydpi="43.57" />
+  </g>
+</svg>
