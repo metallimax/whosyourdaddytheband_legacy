@@ -11,9 +11,9 @@ describe('Filter: prependZero', function () {
     prependZero = $filter('prependZero');
   }));
 
-  it('should return the input prefixed with "prependZero filter:"', function () {
-    var text = 'angularjs';
-    expect(prependZero(text)).toBe('prependZero filter: ' + text);
-  });
+  // it('should return the input prefixed with "prependZero filter:"', function () {
+    // var text = 'angularjs';
+    // expect(prependZero(text)).toBe('prependZero filter: ' + text);
+  // });
 
 });

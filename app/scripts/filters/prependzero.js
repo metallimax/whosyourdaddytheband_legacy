@@ -3,15 +3,15 @@
 angular.module('filters')
   .filter('prependZero', function () {
     return function (input, limit) {
-      if(limit == null) {
+      if(limit === null) {
         limit = 99;
       }
       
       var acc = 10;
-      var prepend = "";
+      var prepend = '';
       
       while(acc <= limit) {
-        prepend += "0";
+        prepend += '0';
         acc *= 10;
       }
       

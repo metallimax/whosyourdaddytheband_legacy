@@ -2,13 +2,15 @@
 
 angular.module('controllers', []);
 angular.module('filters', []);
+angular.module('directives', []);
 
 angular.module('whosyourdaddythebandApp', [
   'ngCookies',
   'ngRoute',
   'ui.filters',
   'controllers',
-  'filters'
+  'filters',
+  'directives'
 ])
   .config(function ($routeProvider) {
     $routeProvider

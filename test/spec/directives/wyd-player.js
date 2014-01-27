@@ -3,7 +3,7 @@
 describe('Directive: wydPlayer', function () {
 
   // load the directive's module
-  beforeEach(module('whosyourdaddythebandApp'));
+  beforeEach(module('directives'));
 
   var element,
     scope;

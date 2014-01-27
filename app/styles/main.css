@@ -87,10 +87,40 @@ body {
   }
 }
 
+@font-face {
+  font-family: wydPlayerFont;
+  src: url(../fonts/LL_RECOR.TTF);
+}
+
+/*.wyd-player {*/
+.wyd-player a.wyd-player-command {
+  font-family: wydPlayerFont;
+  font-size: 32pt;
+  color: #502102;
+  text-shadow: 2px 2px 4px #666666;
+/*}
+
+.wyd-player a.wyd-player-command {*/
+  cursor: pointer;
+  /*color: inherit;*/
+  text-decoration: inherit;
+}
+
+.wyd-player a.wyd-player-command:hover {
+  cursor: pointer;
+  color: #9b3d00;
+  text-decoration: inherit;
+}
+
+.wyd-player audio {
+  display: none;
+}
+
 .header .headerlogo {
   /*float: left;*/
+  width: 10%;
 }
 
 .main-logo {
-  width: 100%;
+  width: 60%;
 }
