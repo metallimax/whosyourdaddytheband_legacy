@@ -2,5 +2,7 @@
 
 angular.module('controllers')
   .controller('ContactCtrl', ['$scope', function ($scope) {
-    $scope.dummy = 'dummy';
+    $scope.contact = {
+      email: 'whosyourdaddytheband@gmail.com'
+    };
   }]);

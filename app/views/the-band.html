@@ -1,1 +1,20 @@
-<p>This is the the-band view.</p>
+<div class="the-band">
+  <div class="band-bio">{{ band.bio }}</div>
+  <div class="band-avatars">
+    <div class="band-avatar" ng-class="{big: member.name === band.currentName}" ng-repeat="member in band.members"><img ng-src="{{ member.avatar }}" ng-click="band.currentName = member.name" /></div>
+  </div>
+  <div class="band-member" ng-repeat="member in band.members">
+    <div class="band-member-card" ng-show="member.name === band.currentName">
+      <div class="band-member-bio">{{ member.bio }} </div>
+      <div class="band-member-instruments">
+        Instruments: {{ member.instruments.join(', ') }}
+      </div>
+      <div class="band-member-instruments">
+        Gears:
+        <div ng-repeat="(type, gears) in member.gears">
+          {{ type }}: {{ gears.join(', ') }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

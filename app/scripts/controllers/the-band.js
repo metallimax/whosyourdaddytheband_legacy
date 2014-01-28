@@ -2,9 +2,11 @@
 
 angular.module('controllers')
   .controller('TheBandCtrl', ['$scope', function ($scope) {
-    $scope.band = [
-      {
+    $scope.band = {
+      bio: 'This is the bio of the band',
+      members: [{
         name: 'Max',
+        avatar: 'images/profiles/avatar-blank.jpg',
         bio: 'This is Max\' bio',
         instruments: ['Guitar', 'Vocals'],
         gears: {
@@ -35,6 +37,7 @@ angular.module('controllers')
       },
       {
         name: 'David',
+        avatar: 'images/profiles/avatar-blank.jpg',
         bio: 'This is David\'s bio',
         instruments: ['Drums'],
         gears: {
@@ -43,12 +46,13 @@ angular.module('controllers')
       },
       {
         name: 'Benji',
+        avatar: 'images/profiles/avatar-blank.jpg',
         bio: 'This is Benji\'s bio',
         instruments: ['Bass'],
         gears: {
           'Bass': ['LTD B-1005'],
           'Effects': ['Dunlop Bass Q Crybaby Wha', 'Bass Overdrive Boss ODB-3']
         }
-      }
-    ];
+      }]
+    };
   }]);

@@ -21,7 +21,7 @@ angular.module('controllers')
       {
         title: 'Build My Hate',
         album: 'Who\'s Your Daddy?',
-        src: ['http://dl.dropbox.com/u/33531527/whosyourdaddytheband/Audio/Compos/hester_mofet.mp3'],
+        // src: ['http://dl.dropbox.com/u/33531527/whosyourdaddytheband/Audio/Compos/hester_mofet.mp3'],
         number: 3
       },
       {
