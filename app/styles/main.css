@@ -127,10 +127,6 @@ body {
 }
 
 .footer {
-  font-family: wydBiohazard;
-  font-size: 200%;
-  letter-spacing: 4px;
-  
   text-align: center;
   border-radius: 8px;
   /*border-color: #502102;*/
@@ -140,6 +136,25 @@ body {
   margin-top: 20px;
   padding-top: 0px;
   color: white;
+}
+
+.footer-band-name {
+  font-family: wydBiohazard;
+  font-size: 200%;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+.footer-social {
+  font-family: wydSocial;
+  font-size: 400%;
+  line-height: 40px;
+}
+
+.footer-social a, .footer-social a:hover, .footer-social a:active {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /*.wyd-player {*/
@@ -262,8 +277,13 @@ body {
 
 .band-avatar img {
   width: 10%;
+  transition: all linear 200ms;
 }
 
-.band-avatar.big img {
-  width: 30%;
+.band-avatar.active img {
+  width: 20%;
+}
+
+.band-avatar.highlight img {
+  width: 15%;
 }
