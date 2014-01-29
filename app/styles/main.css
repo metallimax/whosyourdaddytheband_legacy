@@ -1,3 +1,18 @@
+@font-face {
+  font-family: wydPlayerFont;
+  src: url(../fonts/LL_RECOR.TTF);
+}
+
+@font-face {
+  font-family: wydBiohazard;
+  src: url(../fonts/biohazard.ttf);
+}
+
+@font-face {
+  font-family: wydSocial;
+  src: url(../fonts/social.ttf);
+}
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -125,16 +140,6 @@ body {
   margin-top: 20px;
   padding-top: 0px;
   color: white;
-}
-
-@font-face {
-  font-family: wydPlayerFont;
-  src: url(../fonts/LL_RECOR.TTF);
-}
-
-@font-face {
-  font-family: wydBiohazard;
-  src: url(../fonts/biohazard.ttf);
 }
 
 /*.wyd-player {*/
