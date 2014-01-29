@@ -51,17 +51,16 @@
         <!-- <img class="headerlogo" src="images/wyd-logo-2.0.png" alt="WYD?" /> -->
         <wyd-player />
       </div>
-      <div>
         <!-- <ul class="nav nav-pills pull-right"> -->
-        <ul class="nav nav-pills">
-          <li ng-class="{active: route == '/'}"><a ng-href="#">Home</a></li>
-          <li ng-class="{active: route == '/audio'}"><a ng-href="#audio">Audio</a></li>
-          <li ng-class="{active: route == '/video'}"><a ng-href="#video">Video</a></li>
-          <li ng-class="{active: route == '/the-band'}"><a ng-href="#the-band">The Band</a></li>
-          <li ng-class="{active: route == '/about'}"><a ng-href="#about">About</a></li>
-          <li ng-class="{active: route == '/contact'}"><a ng-href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav nav-pills">
+        <li ng-class="{active: route == '/'}"><a ng-href="#">Home</a></li>
+        <li ng-class="{active: route == '/audio'}"><a ng-href="#audio">Audio</a></li>
+        <li ng-class="{active: route == '/video'}"><a ng-href="#video">Video</a></li>
+        <li ng-class="{active: route == '/the-band'}"><a ng-href="#the-band">The Band</a></li>
+        <li ng-class="{active: route == '/drinks'}"><a ng-href="#drinks">Drinks</a></li>
+        <li ng-class="{active: route == '/about'}"><a ng-href="#about">About</a></li>
+        <li ng-class="{active: route == '/contact'}"><a ng-href="#contact">Contact</a></li>
+      </ul>
     </div>
 
     <!-- Add your site or application content here -->
@@ -69,7 +68,10 @@
     
     <footer class="footer">
       <p class="footer-band-name">Whos Your Daddy</p>
-      <p class="footer-social"><a ng-href="">T</a> <a ng-href="">G</a> <a ng-href="">f</a></p>
+      <p class="footer-social">
+        <a ng-class="ftScClsT" ng-mouseenter="ftScClsT = 'highlight'" ng-mouseleave="ftScClsT = ''" ng-href="">T</a>
+        <a ng-class="ftScClsG" ng-mouseenter="ftScClsG = 'highlight'" ng-mouseleave="ftScClsG = ''" ng-href="">G</a>
+        <a ng-class="ftScClsf" ng-mouseenter="ftScClsf = 'highlight'" ng-mouseleave="ftScClsf = ''" ng-href="">f</a></p>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -111,6 +113,7 @@
         <script src="scripts/filters/prependZero.js"></script>
         <script src="scripts/directives/wyd-player.js"></script>
         <script src="scripts/controllers/wyd-player.js"></script>
+        <script src="scripts/controllers/drinks.js"></script>
         <!-- endbuild -->
 </body>
 </html>

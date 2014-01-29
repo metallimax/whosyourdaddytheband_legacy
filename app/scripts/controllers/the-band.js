@@ -3,11 +3,11 @@
 angular.module('controllers')
   .controller('TheBandCtrl', ['$scope', function ($scope) {
     $scope.band = {
-      bio: 'This is the bio of the band',
+      bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestias et commodi veritatis cupiditate reprehenderit quibusdam dolorum esse saepe illum excepturi vel aliquam temporibus molestiae natus necessitatibus aliquid quis in!',
       members: [{
         name: 'Max',
-        avatar: 'images/profiles/avatar-blank.jpg',
-        bio: 'This is Max\' bio',
+        avatar: 'images/profiles/max.png',
+        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestias et commodi veritatis cupiditate reprehenderit quibusdam dolorum esse saepe illum excepturi vel aliquam temporibus molestiae natus necessitatibus aliquid quis in!',
         instruments: ['Guitar', 'Vocals'],
         gears: {
           'Guitars': ['Jackson RR', 'Jackson Kelly'],
@@ -37,8 +37,8 @@ angular.module('controllers')
       },
       {
         name: 'David',
-        avatar: 'images/profiles/avatar-blank.jpg',
-        bio: 'This is David\'s bio',
+        avatar: 'images/profiles/david.png',
+        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestias et commodi veritatis cupiditate reprehenderit quibusdam dolorum esse saepe illum excepturi vel aliquam temporibus molestiae natus necessitatibus aliquid quis in!',
         instruments: ['Drums'],
         gears: {
           'Drum Kit': ['??']
@@ -46,8 +46,8 @@ angular.module('controllers')
       },
       {
         name: 'Benji',
-        avatar: 'images/profiles/avatar-blank.jpg',
-        bio: 'This is Benji\'s bio',
+        avatar: 'images/profiles/benji.png',
+        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestias et commodi veritatis cupiditate reprehenderit quibusdam dolorum esse saepe illum excepturi vel aliquam temporibus molestiae natus necessitatibus aliquid quis in!',
         instruments: ['Bass'],
         gears: {
           'Bass': ['LTD B-1005'],

@@ -104,17 +104,22 @@ body {
 }
 
 .nav {
-  margin-bottom: -22px;
-  margin-left: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
   text-align: center;
   border-radius: 8px;
-  background-color: #111111;
   border: none 1px #502102;
-  margin: 10px;
+  margin-bottom: 20px;
   box-shadow: 0px 0px 8px #666666;
+  
+  background: url(../images/wyd-logo-2.0.png) 4px 4px;
+  background-size: 20%;
+  background-repeat:no-repeat;
+  background-color: #222222;
 }
 
 .view {
@@ -149,6 +154,17 @@ body {
   font-family: wydSocial;
   font-size: 400%;
   line-height: 40px;
+  transition: all linear 2s;
+}
+
+.footer-social > a {
+  font-family: inherit;
+  transition: all linear 50ms;
+}
+
+.footer-social > a.highlight {
+  font-family: inherit;
+  font-size: 110%;
 }
 
 .footer-social a, .footer-social a:hover, .footer-social a:active {
@@ -162,7 +178,7 @@ body {
   font-family: wydPlayerFont;
   font-size: 32pt;
   color: #502102;
-  /*text-shadow: 0px 0px 4px #666666;*/
+  text-shadow: 0px 0px 16px #ffffff;
 /*}
 
 .wyd-player a.wyd-player-command {*/
@@ -203,9 +219,6 @@ body {
 }
 
 .wyd-player {
-  background: url(../images/wyd-logo-2.0.png) 4px 4px;
-  background-size: 14%;
-  background-repeat:no-repeat;
   /*float: left;*/
 }
 
@@ -215,7 +228,7 @@ body {
 }
 
 .wyd-player-title {
-  color: #502102;
+  color: #B3A49B;
   font-weight: bold;
 }
 
@@ -233,18 +246,23 @@ body {
   margin-bottom: 4px;
 }
 
+.nav-pills {
+  display: inline-block;
+}
+
 .nav-pills > li {
   font-family: wydBiohazard;
   font-size: 400%;
-  letter-spacing: 4px;
   line-height: 50%;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   background-color: rgba(80, 33, 2, 0.75);
-  box-shadow:  0px 0px 8px #666666;
+  box-shadow:  0px 0px 8px #ffffff;
   /*background-color: #502102;*/
   color: white;
 }
@@ -252,6 +270,7 @@ body {
 .nav-pills > li > a,
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
+  /*background-color: rgba(255, 255, 255, 0.25);*/
   color: #999999;
 }
 
@@ -266,8 +285,14 @@ body {
   font-size: 80%;
 }
 
+.the-band p {
+  padding-left: 24px;
+}
+
 .band-avatars {
   text-align: center;
+  height: 210px;
+  margin-top: 20px;
 }
 
 .band-avatar {
@@ -276,14 +301,19 @@ body {
 }
 
 .band-avatar img {
-  width: 10%;
+  border-radius: 8px;
+  height: 100px;
   transition: all linear 200ms;
+  border: 2px solid #9b3d00;
 }
 
 .band-avatar.active img {
-  width: 20%;
+  border-radius: 16px;
+  height: 200px;
 }
 
 .band-avatar.highlight img {
-  width: 15%;
+  height: 110px;
 }
+
+

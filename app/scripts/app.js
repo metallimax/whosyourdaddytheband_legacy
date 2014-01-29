@@ -38,6 +38,10 @@ angular.module('whosyourdaddythebandApp', [
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
+      .when('/drinks', {
+        templateUrl: 'views/drinks.html',
+        controller: 'DrinksCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
