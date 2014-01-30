@@ -1,1 +1,6 @@
-<p>This is the drinks view.</p>
+<div class="drinks">
+  <div ng-repeat="drink in drinks">
+    <h2>{{ drink.type }}</h2>
+    <span class="drink" ng-repeat="item in drink.items"><a ng-href="{{ item.url }}" target="_blank"><img src="{{ item.logo }}" alt="{{ item.name }}" /></a></span>
+  </div>
+</div>
