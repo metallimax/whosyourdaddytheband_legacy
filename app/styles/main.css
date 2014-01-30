@@ -270,7 +270,7 @@ body {
 
 .nav-pills > li {
   font-family: wydBiohazard;
-  font-size: 400%;
+  font-size: 300%;
   line-height: 50%;
   margin-left: 4px;
   margin-right: 4px;
@@ -279,7 +279,7 @@ body {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: rgba(80, 33, 2, 0.75);
+  background-color: rgba(80, 33, 2, 1);
   box-shadow:  0px 0px 8px #ffffff;
   /*background-color: #502102;*/
   color: white;
@@ -295,7 +295,7 @@ body {
 }
 
 .nav-pills > li > a:hover {
-  background-color: rgba(155, 61, 0, 0.75);
+  background-color: rgba(155, 61, 0, 1);
   box-shadow:  0px 0px 8px #666666;
   /*background-color: #9b3d00;*/
   color: white;
