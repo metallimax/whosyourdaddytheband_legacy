@@ -112,14 +112,17 @@ body {
 .header {
   text-align: center;
   border-radius: 8px;
-  border: none 1px #502102;
+  border: solid 1px #502102;
   margin-bottom: 20px;
   box-shadow: 0px 0px 8px #666666;
   
-  background: url(../images/wyd-logo-2.0.png) 4px 4px;
+  /*background: url(../images/wyd-logo-2.0.png) 4px 4px;
   background-size: 20%;
   background-repeat:no-repeat;
-  background-color: #222222;
+  background-color: #222222;*/
+  background-image: url(../images/header-bg.jpg);
+  background-size: 50%;
+  background-repeat: repeat;
 }
 
 .view {
@@ -178,7 +181,7 @@ body {
   font-family: wydPlayerFont;
   font-size: 32pt;
   color: #502102;
-  text-shadow: 0px 0px 16px #ffffff;
+  text-shadow: 0px 0px 16px #9b3d00;
 /*}
 
 .wyd-player a.wyd-player-command {*/
@@ -223,18 +226,32 @@ body {
 }
 
 .wyd-player-time {
-  color: #9b3d00;
+  color: #333333;
   font-weight: bold;
 }
 
 .wyd-player-title {
-  color: #B3A49B;
+  /*color: #B3A49B;*/
+  color: #000000;
   font-weight: bold;
 }
 
-.headerlogo {
-  float: left;
-  width: 10%;
+.header-top {
+  position: relative;
+}
+
+.header-logo-left {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 15%;
+}
+
+.header-logo-right {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 15%;
 }
 
 .main-logo {
@@ -271,7 +288,9 @@ body {
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
   /*background-color: rgba(255, 255, 255, 0.25);*/
-  color: #999999;
+  /*color: #999999;*/
+  color: #ffffff;
+  text-shadow:  0px 0px 8px #000000;
 }
 
 .nav-pills > li > a:hover {

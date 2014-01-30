@@ -19,10 +19,10 @@
       </div>
       <div class="band-member-instruments">
         <h3>Gears</h3>
-        <div ng-repeat="(type, gears) in member.gears">
-          <h4>{{ type }}</h4>
+        <div ng-repeat="gearset in member.gears">
+          <h4>{{ gearset.type }}</h4>
           <ul>
-          <li ng-repeat="gear in gears">{{ gear }}</li>
+          <li ng-repeat="gear in gearset.gears">{{ gear }}</li>
           </ul>
         </div>
       </div>
