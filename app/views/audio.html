@@ -1,6 +1,6 @@
 <div ng-repeat="track in tracks | unique:'album'">
   <h2>{{ track.album }}</h2>
   <ul>
-    <li ng-repeat="tr in tracks | filter:{album: track.album}:true | orderBy:'number'">{{tr.number | prependZero}} - {{tr.title}}</li>
+    <li ng-repeat="tr in tracks | filter:{album: track.album}:true | orderBy:'number'"><a ng-disabled="!tr.src" ng-click="wydPlayer.jumpToAndPlay(tr.id)">{{tr.number | prependZero}} - {{tr.title}}</a></li>
   </ul>
 </div>

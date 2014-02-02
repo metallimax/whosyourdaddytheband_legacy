@@ -4,7 +4,7 @@ angular.module('directives')
   .directive('wydPlayer', function () {
     return {
       template: [
-        '<div class="wyd-player" ng-controller="WydPlayerCtrl">',
+        '<div class="wyd-player">',
         '<div>',
         '<a class="wyd-player-command" ng-click="wydPlayer.previous()">z</a>',
         '<a class="wyd-player-command" ng-show="wydPlayerAudio.paused" ng-click="wydPlayer.play()">u</a>',
