@@ -1,10 +1,17 @@
 'use strict';
 
 angular.module('controllers')
-  .controller('GlobalCtrl', ['$scope', '$route', '$element', '$interval', '$log', function ($scope, $route, $element, $interval, $log) {
+  .controller('GlobalCtrl', ['$scope', '$route', '$element', '$interval', '$cookies', '$log', function ($scope, $route, $element, $interval, $cookies, $log) {
     $scope.$on('$routeChangeSuccess', function() {
       $scope.route = $route.current.$$route.originalPath;
     });
+    
+    $scope.splashed = $cookies.splashed;
+    
+    $scope.splash = function() {
+      $cookies.splashed = true;
+      $scope.splashed = $cookies.splashed;
+    };
     
     $scope.tracks = [
       {
