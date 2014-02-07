@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('controllers')
-  .controller('GlobalCtrl', ['$scope', '$route', '$element', '$interval', '$cookies', '$log', function ($scope, $route, $element, $interval, $cookies, $log) {
+  .controller('GlobalCtrl', ['$scope', '$route', '$element', '$interval', '$cookies', function ($scope, $route, $element, $interval, $cookies) {
     $scope.$on('$routeChangeSuccess', function() {
       $scope.route = $route.current.$$route.originalPath;
     });
@@ -139,13 +139,12 @@ angular.module('controllers')
         }
       },
       volume: function() {
-        $log.info('wydPlayer.volume()');
+        // TODO implement this
       },
       list: function() {
-        $log.info('wydPlayer.list()');
+        // TODO implement this
       },
       jumpToAndPlay: function(trackId) {
-        $log.info(trackId);
         for(var i=0, len=$scope.playlist.tracks.length; i < len; i++) {
           if($scope.playlist.tracks[i].id === trackId) {
             $scope.changeTrack(i);
