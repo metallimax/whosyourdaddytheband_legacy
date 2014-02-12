@@ -176,6 +176,10 @@ body {
   text-decoration: inherit;
 }
 
+ul {
+  list-style-image: url(../images/bullet.png);
+}
+
 /*.wyd-player {*/
 .wyd-player a.wyd-player-command {
   font-family: wydPlayerFont;
