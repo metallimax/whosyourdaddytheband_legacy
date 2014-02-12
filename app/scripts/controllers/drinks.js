@@ -8,7 +8,7 @@ angular.module('whosyourdaddythebandApp')
         items: [
           {
             name: 'Leffe',
-            logo: 'images/drinks/beer-leffe.png',
+            logo: './images/drinks/beer-leffe.png',
             url: 'http://www.leffe.com',
           },
           {
