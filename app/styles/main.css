@@ -336,6 +336,7 @@ ul {
   border-radius: 8px;
   transition: all linear 200ms;
   border: 2px solid #9b3d00;
+  cursor: pointer;
 }
 
 .band-avatar.active .band-avatar-picture {
@@ -386,6 +387,7 @@ ul {
   margin-left: 4px;
   margin-right: 4px;
   display: inline-block;
+  cursor: pointer;
 }
 
 #drink-leffe {
