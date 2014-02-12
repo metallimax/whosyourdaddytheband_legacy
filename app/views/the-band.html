@@ -4,8 +4,9 @@
     <p>{{ band.bio }}</p>
   </div>
   <div class="band-avatars">
-    <!--<div class="band-avatar" ng-class="{active: member.name === band.currentName}" ng-repeat="member in band.members"><img ng-src="{{ member.avatar }}" ng-click="band.currentName = member.name" /></div> -->
-    <div class="band-avatar" ng-class="{active: member.name === band.currentName}" ng-repeat="member in band.members"><div class="band-avatar-picture" id="profile-{{ member.name }}" ng-click="band.currentName = member.name" /></div>
+    <div class="band-avatar" ng-class="{active: member.name === band.currentName}" ng-repeat="member in band.members">
+      <div class="band-avatar-picture" id="profile-{{ member.name }}" ng-click="band.currentName = member.name"></div>
+    </div>
   </div>
   <div class="band-member" ng-repeat="member in band.members">
     <div class="band-member-card" ng-show="member.name === band.currentName">
