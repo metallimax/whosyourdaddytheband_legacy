@@ -181,6 +181,7 @@ module.exports = function (grunt) {
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         // assetsDirs: ['<%= yeoman.dist %>']
+        // MDU: this is the hack for the css relative URL stuff
           dirs: ['<%= yeoman.dist %>'],
           basedir: '<%= yeoman.dist %>'
       }

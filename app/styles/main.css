@@ -341,3 +341,38 @@ body {
   margin-left: 4px;
   margin-right: 4px;
 }
+
+.drink-logo {
+  height: 64px;
+  width: 64px;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin-left: 4px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+#drink-leffe {
+  background-image: url(../images/drinks/beer-leffe.png);
+}
+
+#drink-goudale {
+  background-image: url(../images/drinks/beer-goudale.png);
+}
+
+#drink-jeanlain {
+  background-image: url(../images/drinks/beer-jenlain.png);
+}
+
+#drink-jd {
+  background-image: url(../images/drinks/whiskey-jd.jpg);
+}
+
+#drink-connemara {
+  background-image: url(../images/drinks/whiskey-connemara.jpg);
+}
+
+#drink-goldstrike {
+  background-image: url(../images/drinks/gold-strike.png);
+}
