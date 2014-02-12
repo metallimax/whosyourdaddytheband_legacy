@@ -320,9 +320,40 @@ body {
   margin: 10px;
 }
 
-.band-avatar img {
-  border-radius: 8px;
+.band-avatar .band-avatar-picture {
   height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin-left: 4px;
+  margin-right: 4px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: all linear 200ms;
+  border: 2px solid #9b3d00;
+}
+
+.band-avatar.active .band-avatar-picture {
+  width: 200px;
+  height: 200px;
+}
+
+#profile-Max {
+  background-image: url(../images/profiles/max.png);
+}
+
+#profile-David {
+  background-image: url(../images/profiles/david.png);
+}
+
+#profile-Benji {
+  background-image: url(../images/profiles/benji.png);
+}
+
+.band-avatar img {
+  height: 100px;
+  border-radius: 8px;
   transition: all linear 200ms;
   border: 2px solid #9b3d00;
 }
