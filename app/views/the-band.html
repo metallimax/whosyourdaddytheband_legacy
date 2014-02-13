@@ -1,7 +1,7 @@
 <div class="the-band">
   <div class="band-bio">
     <h2>Band Bio</h2>
-    <p>{{ band.bio }}</p>
+    <p ng-bind-html="band.bio"></p>
   </div>
   <div class="band-avatars">
     <div class="band-avatar" ng-class="{active: member.name === band.currentName}" ng-repeat="member in band.members">
@@ -13,7 +13,7 @@
       <h2>{{ member.name }}</h2>
       <div class="band-member-bio">
         <h3>Bio</h3>
-        <p>{{ member.bio }}</p>
+        <p ng-bind-html="member.bio"></p>
       </div>
       <div class="band-member-instruments">
         <h3>Instruments</h3>
