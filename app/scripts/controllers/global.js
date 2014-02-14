@@ -18,39 +18,50 @@ angular.module('controllers')
         id: 'letsgiveahand',
         title: 'Let\'s Give a Hand',
         album: 'Who\'s Your Daddy?',
-        src: [
-          'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.mp3',
-          'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.ogg'
-        ],
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.ogg'
+        },
         number: 1
       },
       {
         id: 'hestermofet',
         title: 'Hester Mofet',
         album: 'Who\'s Your Daddy?',
-        // src: ['http://dl.dropbox.com/u/33531527/whosyourdaddytheband/Audio/Compos/hester_mofet.mp3'],
-        src: ['https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.mp3'],
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.ogg'
+        },
         number: 2
       },
       {
         id: 'buildmyhate',
         title: 'Build My Hate',
         album: 'Who\'s Your Daddy?',
-        src: ['https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/03%20-%20Build%20My%20Hate.mp3'],
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/03%20-%20Build%20My%20Hate.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/03%20-%20Build%20My%20Hate.ogg'
+        },
         number: 3
       },
       {
         id: 'ravage',
         title: 'Ravage',
         album: 'Who\'s Your Daddy?',
-        src: ['https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/04%20-%20Ravage%20%2B%20Finish.mp3'],
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/04%20-%20Ravage%20%2B%20Finish.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/04%20-%20Ravage%20%2B%20Finish.ogg'
+        },
         number: 4
       },
       {
         id: 'kyms',
         title: 'K.Y.M.S.',
         album: 'Who\'s Your Daddy?',
-        src: ['https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/05%20-%20K.Y.M.S.mp3'],
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/05%20-%20K.Y.M.S.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/05%20-%20K.Y.M.S.ogg'
+        },
         number: 5
       },
       {
@@ -80,7 +91,18 @@ angular.module('controllers')
       $scope.playlist.current = trackNumber;
       if($scope.playlist.tracks.length > 0 && trackNumber < $scope.playlist.tracks.length) {
         $scope.playlist.currentTitle = $scope.playlist.tracks[$scope.playlist.current].title;
-        $scope.wydPlayerAudio.src = $scope.playlist.tracks[$scope.playlist.current].src;
+        var src = $scope.playlist.tracks[$scope.playlist.current].src;
+        for(var type in src) {
+          if($scope.wydPlayerAudio.canPlayType(type)) {
+            $scope.wydPlayerAudio.type = type;
+            $scope.wydPlayerAudio.src = src[type];
+            $scope.wydPlayerAudio.load();
+            $scope.time = '00:00';
+            $scope.elapsed = 0;
+            $scope.buffered = 0;
+            break;
+          }
+        }
       }
       else {
         $scope.wydPlayerAudio.src = '';

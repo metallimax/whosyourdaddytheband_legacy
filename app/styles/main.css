@@ -413,3 +413,7 @@ ul {
 #drink-goldstrike {
   background-image: url(../images/drinks/gold-strike.png);
 }
+
+.audio-link {
+  cursor: pointer;
+}
