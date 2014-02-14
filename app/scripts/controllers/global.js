@@ -18,7 +18,10 @@ angular.module('controllers')
         id: 'letsgiveahand',
         title: 'Let\'s Give a Hand',
         album: 'Who\'s Your Daddy?',
-        src: ['https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.mp3'],
+        src: [
+          'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.mp3',
+          'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.ogg'
+        ],
         number: 1
       },
       {
