@@ -356,6 +356,10 @@ ul {
   background-image: url(../images/profiles/benji.png);
 }
 
+#profile-André {
+  background-image: url(../images/profiles/andre.jpg);
+}
+
 .band-avatar img {
   height: 100px;
   border-radius: 8px;
