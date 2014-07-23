@@ -421,3 +421,7 @@ ul {
 .audio-link {
   cursor: pointer;
 }
+
+.embedded-video {
+    text-align: center;
+}
