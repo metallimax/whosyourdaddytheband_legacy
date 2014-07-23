@@ -115,8 +115,8 @@ angular.module('controllers')
         name: 'André',
         // avatar: 'images/profiles/andre.jpg',
         bio: $sce.trustAsHtml([
-          "Guitarist for 10 years, I've played in a band named <code>Raven Fly</code> before I've been in <code>Whö's your Daddy?</code>",
-          "My favorite bands are <code>Children of Bodom</code>, <code>Arch Enemy</code> and <code>Born of Osiris</code>, that have a great influence on my play!"
+          'Guitarist for 10 years, I\'ve played in a band named <code>Raven Fly</code> before I\'ve been in <code>Whö\'s your Daddy?</code>',
+          'My favorite bands are <code>Children of Bodom</code>, <code>Arch Enemy</code> and <code>Born of Osiris</code>, that have a great influence on my play!'
         ].join('<br/>\n')),
         instruments: ['Guitar'],
         gears: [
