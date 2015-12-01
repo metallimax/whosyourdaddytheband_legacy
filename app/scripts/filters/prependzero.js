@@ -8,7 +8,7 @@ angular.module('filters')
       var acc = 10;
       var prepend = '';
       
-      while(acc+input <= limit) {
+      while(acc*input <= limit) {
         prepend += '0';
         acc *= 10;
       }

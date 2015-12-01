@@ -15,44 +15,67 @@ angular.module('controllers')
     
     $scope.tracks = [
       {
-        id: 'letsgiveahand',
-        title: 'Let\'s Give a Hand',
-        album: 'Who\'s Your Daddy?',
-        src: {
-          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.mp3',
-          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.ogg'
-        },
-        number: 1
-      },
-      {
-        id: 'hestermofet',
-        title: 'Hester Mofet',
-        album: 'Who\'s Your Daddy?',
-        src: {
-          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.mp3',
-          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.ogg'
-        },
-        number: 2
-      },
-      {
         id: 'buildmyhate',
         title: 'Build My Hate',
         album: 'Who\'s Your Daddy?',
         src: {
-          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/03%20-%20Build%20My%20Hate.mp3',
-          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/03%20-%20Build%20My%20Hate.ogg'
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/01%20-%20Build%20My%20Hate.mp3'
+        },
+        number: 1
+      },
+      {
+        id: 'legalcanibal',
+        title: 'Legal Canibal',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/02%20-%20Legal%20Canibal.mp3'
+        },
+        number: 2
+      },
+      {
+        id: 'mycrusade',
+        title: 'MyCrusade',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/03%20-%20My%20Crusade.mp3'
         },
         number: 3
+      },
+      {
+        id: 'cabal',
+        title: 'Cabal',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/04%20-%20Cabal.mp3'
+        },
+        number: 4
       },
       {
         id: 'ravage',
         title: 'Ravage',
         album: 'Who\'s Your Daddy?',
         src: {
-          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/04%20-%20Ravage%20%2B%20Finish.mp3',
-          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/04%20-%20Ravage%20%2B%20Finish.ogg'
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/05%20-%20Ravage.mp3'
         },
-        number: 4
+        number: 5
+      },
+      {
+        id: 'wnduwd',
+        title: 'We\'re Not Dead Until We Die',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/07%20-%20We\'re%20Not%20Dead%20Until%20We%20Die.mp3'
+        },
+        number: 6
+      },
+      {
+        id: 'blastmykarma',
+        title: 'Blast My Karma',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/Audio/Compos/setlist/06%20-%20Blast%20My%20Karma.mp3'
+        },
+        number: 7
       },
       {
         id: 'kyms',
@@ -62,19 +85,39 @@ angular.module('controllers')
           'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/05%20-%20K.Y.M.S.mp3',
           'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/05%20-%20K.Y.M.S.ogg'
         },
-        number: 5
+        number: 8
       },
       {
-        id: 'smashyourassout',
-        title: 'Smash Your Ass Out',
-        album: 'Bonus',
-        number: 1
+        id: 'hestermofet',
+        title: 'Hester Mofet',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/02%20-%20Hester%20Mofet.ogg'
+        },
+        number: 9
       },
+      {
+        id: 'letsgiveahand',
+        title: 'Let\'s Give a Hand',
+        album: 'Who\'s Your Daddy?',
+        src: {
+          'audio/mpeg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/Compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.mp3',
+          'audio/ogg': 'https://dl.dropboxusercontent.com/u/33531527/whosyourdaddytheband/audio/compos/Who%27s%20Your%20Daddy/01%20-%20Let%27s%20Give%20A%20Hand.ogg'
+        },
+        number: 10
+      },
+      // {
+        // id: 'smashyourassout',
+        // title: 'Smash Your Ass Out',
+        // album: 'Bonus',
+        // number: 1
+      // },
       {
         id: 'motorhc',
-        title: 'Motor HC',
+        title: 'Motoriplash',
         album: 'Bonus',
-        number: 2
+        number: 1
       }
     ];
     $scope.wydPlayerAudio = $element.find('#wyd-audioplayer')[0];

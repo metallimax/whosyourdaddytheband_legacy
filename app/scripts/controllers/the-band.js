@@ -10,7 +10,9 @@ angular.module('controllers')
         'After a while looking for partners, they finally found a drummer (in the person of David) that matched with Max spirit.',
         'Unfortunately, Sylvain thought that the style went too heavy/fast so he decided to left the band.',
         'Benji, a former neighboor of David who is a bass player was involved in the challenge of this young band.',
-        'After a while looking for another guitarist, we finally found André to fill this role, composing songs one at a time ...'
+        'After a while looking for another guitarist, we finally found André to fill this role, composing songs one at a time ...',
+        'Then André left the band to go study in Belgium.',
+        'After a while, Pierre-Yves came to fille the empty space at guitar and filled it very well!'
       ].join('<br/>\n')),
       members: [{
         name: 'Max',
@@ -35,7 +37,6 @@ angular.module('controllers')
             type: 'Amplifiers',
             gears: [
               'Peavey XXX II w/ Marshall 1960AV Cabinet',
-              'Peavey Ultra+ w/ Marshall 1960AV Cabinet',
               'Marshall JCM 2000 DSL 401'
             ]
           },
@@ -43,11 +44,14 @@ angular.module('controllers')
             type: 'Effects',
             gears: [
               'Dunlop Crybaby Wha',
-              'Visual Sound Double Trouble',
-              'Boss Harmonist PS-6',
+              'EHX East River Drive',
+              'EHX Hot Tubes Nano',
+              'EHX Neo Clone',
+              'EHX Neo Mistress ',
+              // 'Boss Harmonist PS-6',
               'MXR Phaser Phase 90',
-              'T-Rex Tonebug Chorus/Flanger',
-              'MXR Boost MC-401',
+              // 'T-Rex Tonebug Chorus/Flanger',
+              // 'MXR Boost MC-401',
               'G-Lab Smooth Delay SD-1',
               'Morley Alligator Volume',
               'Visual Sound Garagetone Tremolo',
@@ -83,7 +87,7 @@ angular.module('controllers')
         name: 'David',
         // avatar: 'images/profiles/david.png',
         bio: $sce.trustAsHtml([
-          'Coming soon ...'
+          '<code>Whö\'s your Daddy?</code> joined may 2012'
         ].join('<br/>\n')),
         instruments: ['Drums'],
         gears: [
@@ -97,7 +101,7 @@ angular.module('controllers')
         name: 'Benji',
         // avatar: 'images/profiles/benji.png',
         bio: $sce.trustAsHtml([
-          'Coming soon ...'
+          '<code>Whö\'s your Daddy?</code> joined november 2012'
         ].join('<br/>\n')),
         instruments: ['Bass', 'Backing Vocals'],
         gears: [
@@ -107,16 +111,43 @@ angular.module('controllers')
           },
           {
             type: 'Effects',
-            gears: ['Dunlop Bass Q Crybaby Wha', 'Bass Overdrive Boss ODB-3']
+            gears: [
+              'Dunlop Bass Q Crybaby Wha',
+              'Bass Overdrive Boss ODB-3',
+              'T-Rex Tonebug Chorus/Flanger'
+            ]
+          },
+          {
+            type: 'Other',
+            gears: [
+              'Planet Waves PW-CT-11 Tru-Strobe Tuner'
+            ]
           }
         ]
       },
+      // {
+        // name: 'André',
+        // // avatar: 'images/profiles/andre.jpg',
+        // bio: $sce.trustAsHtml([
+          // 'Guitarist for 10 years, I\'ve played in a band named <code>Raven Fly</code> before I\'ve been in <code>Whö\'s your Daddy?</code>',
+          // 'My favorite bands are <code>Children of Bodom</code>, <code>Arch Enemy</code> and <code>Born of Osiris</code>, that have a great influence on my play!'
+        // ].join('<br/>\n')),
+        // instruments: ['Guitar'],
+        // gears: [
+          // {
+            // type: 'Guitars',
+            // gears: ['Jackson KVX10 King V', 'ESP LTD M-400']
+          // },
+          // {
+            // type: 'Amplifiers',
+            // gears: ['Marshall MG 100-DFX']
+          // }
+        // ]
+      // },
       {
-        name: 'André',
-        // avatar: 'images/profiles/andre.jpg',
+        name: 'Pierre-Yves',
         bio: $sce.trustAsHtml([
-          'Guitarist for 10 years, I\'ve played in a band named <code>Raven Fly</code> before I\'ve been in <code>Whö\'s your Daddy?</code>',
-          'My favorite bands are <code>Children of Bodom</code>, <code>Arch Enemy</code> and <code>Born of Osiris</code>, that have a great influence on my play!'
+          '<code>Whö\'s your Daddy?</code> joined november 2015'
         ].join('<br/>\n')),
         instruments: ['Guitar'],
         gears: [
@@ -126,7 +157,22 @@ angular.module('controllers')
           },
           {
             type: 'Amplifiers',
-            gears: ['Marshall MG 100-DFX']
+            gears: [
+              'Peavey Ultra+',
+              'Peavey Valveking Combo 50'
+            ]
+          },
+          {
+            type: 'Effects',
+            gears: [
+              'Visual Sound Double Trouble'
+            ]
+          },
+          {
+            type: 'Other',
+            gears: [
+              'Planet Waves PW-CT-11 Tru-Strobe Tuner'
+            ]
           }
         ]
       }]

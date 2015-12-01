@@ -345,7 +345,7 @@ ul {
 }
 
 #profile-Max {
-  background-image: url(../images/profiles/max.png);
+  background-image: url(../images/profiles/max.jpg);
 }
 
 #profile-David {
@@ -358,6 +358,10 @@ ul {
 
 #profile-André {
   background-image: url(../images/profiles/andre.jpg);
+}
+
+#profile-Pierre-Yves {
+  background-image: url(../images/profiles/pyk.jpg);
 }
 
 .band-avatar img {
